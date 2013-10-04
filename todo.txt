@@ -1,0 +1,13 @@
+* order by join field ex.: order by pessoa.cachorro.nome
+
+* allow composite id navigation easyCriteria.andStringLike("id.idString", "%ey 3%");
+
+* tuple
+
+* subquery
+
+* case in query
+
+* verificar enum is null
+
+* verificar map is empty

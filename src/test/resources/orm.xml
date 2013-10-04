@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0">
+
+    <entity class="com.uaihebert.model.test.Person"/>
+    <entity class="com.uaihebert.model.test.Address"/>
+    <entity class="com.uaihebert.model.test.Car"/>
+    <entity class="com.uaihebert.model.test.Dog"/>
+    <entity class="com.uaihebert.model.test.Cat"/>
+    <entity class="com.uaihebert.model.test.Certification"/>
+    <entity class="com.uaihebert.model.test.Song"/>
+    <entity class="com.uaihebert.model.test.Color"/>
+    <entity class="com.uaihebert.model.test.Manufacturer"/>
+    <entity class="com.uaihebert.model.test.Product"/>
+    <entity class="com.uaihebert.model.test.NickName"/>
+    <entity class="com.uaihebert.model.test.DummyEntity"/>
+    <entity class="com.uaihebert.model.test.EntityEmbeddedId"/>
+    <embeddable class="com.uaihebert.model.test.EmbeddedIdDummy" />
+
+</entity-mappings>

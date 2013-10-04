@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/96/trunk/src/main/java/com/uaihebert/model
+END
+EasyCTOImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/86/trunk/src/main/java/com/uaihebert/model/EasyCTOImp.java
+END
+PredicateGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/87/trunk/src/main/java/com/uaihebert/model/PredicateGroup.java
+END
+EasyJoinStringLike.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/69/trunk/src/main/java/com/uaihebert/model/EasyJoinStringLike.java
+END
+PredicatesManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/86/trunk/src/main/java/com/uaihebert/model/PredicatesManager.java
+END
+QueryConfigurations.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/69/trunk/src/main/java/com/uaihebert/model/QueryConfigurations.java
+END
+PredicateCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/82/trunk/src/main/java/com/uaihebert/model/PredicateCreator.java
+END
+EasyAndWithOr.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/72/trunk/src/main/java/com/uaihebert/model/EasyAndWithOr.java
+END
+WhereCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/67/trunk/src/main/java/com/uaihebert/model/WhereCondition.java
+END
+EasyCriteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/94/trunk/src/main/java/com/uaihebert/model/EasyCriteria.java
+END
+EasyAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/70/trunk/src/main/java/com/uaihebert/model/EasyAttribute.java
+END
+JoinIsNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/73/trunk/src/main/java/com/uaihebert/model/JoinIsNull.java
+END
+Between.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/67/trunk/src/main/java/com/uaihebert/model/Between.java
+END
+EntityPathHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/82/trunk/src/main/java/com/uaihebert/model/EntityPathHelper.java
+END
+EasyCriteriaImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/87/trunk/src/main/java/com/uaihebert/model/EasyCriteriaImp.java
+END
+EasyCriteriaBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/89/trunk/src/main/java/com/uaihebert/model/EasyCriteriaBuilder.java
+END
+CollectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/49/trunk/src/main/java/com/uaihebert/model/CollectionType.java
+END
+EasyJoinStringIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/69/trunk/src/main/java/com/uaihebert/model/EasyJoinStringIn.java
+END
+BasicQueryElements.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/89/trunk/src/main/java/com/uaihebert/model/BasicQueryElements.java
+END
+EasyOrEqualsIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/73/trunk/src/main/java/com/uaihebert/model/EasyOrEqualsIndex.java
+END
+JoinBetween.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/71/trunk/src/main/java/com/uaihebert/model/JoinBetween.java
+END
+CriteriaGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/91/trunk/src/main/java/com/uaihebert/model/CriteriaGenerator.java
+END
+EasyConditionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/84/trunk/src/main/java/com/uaihebert/model/EasyConditionType.java
+END
+JoinIsEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/73/trunk/src/main/java/com/uaihebert/model/JoinIsEmpty.java
+END
