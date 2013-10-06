@@ -1065,4 +1065,7 @@ public interface EasyCriteria<T> {
      * @return total of results of the created criteria
      */
     public Long count();
+    
+    public EasyCriteria<T> clear();
+    
 }

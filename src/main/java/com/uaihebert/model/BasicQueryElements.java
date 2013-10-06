@@ -45,7 +45,13 @@ public class BasicQueryElements<T> {
         this.criteriaGenerator = new CriteriaGenerator<T>(easyCriteriaBuilder);
     }
 
-    public TypedQuery<T> getTypedQuery() {
+    
+    public EasyCriteriaBuilder<T> getEasyCriteriaBuilder() {
+		return easyCriteriaBuilder;
+	}
+
+
+	public TypedQuery<T> getTypedQuery() {
         setUpOrderByIfNeeded();
 
         return easyCriteriaBuilder.createMainQuery();

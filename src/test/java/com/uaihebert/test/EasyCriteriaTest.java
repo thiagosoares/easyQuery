@@ -50,6 +50,39 @@ import static org.junit.Assert.*;
  * */
 public class EasyCriteriaTest extends AbstractTest{
 
+	@Test
+	public void boubleSequenceExecutions() {
+		List<Person> personsFromJPQL = getListFromJPQL(
+				"select p from Person p where p.weight = 10", Person.class);
+		assertTrue(personsFromJPQL.size() > 0);
+
+		EasyCriteria<Person> easyCriteria = EasyCriteriaFactory.createQueryCriteria(getEntityManager(), Person.class);
+
+		easyCriteria.andEquals("weight", 10f);
+
+		List<Person> easyCriteriaResult = easyCriteria.getResultList();
+
+		assertEquals(personsFromJPQL.size(), easyCriteriaResult.size());
+
+		assertTrue(personsFromJPQL.containsAll(easyCriteriaResult));
+		
+		System.out.println("Replay");
+		
+		
+		easyCriteria.clear();
+		
+		easyCriteria.andEquals("weight", 10f);
+
+		List<Person> easyCriteriaResult2 = easyCriteria.getResultList();
+
+		assertEquals(personsFromJPQL.size(), easyCriteriaResult2.size());
+
+		assertTrue(personsFromJPQL.containsAll(easyCriteriaResult2));
+		
+		
+	}
+	
+	
     private <T> EasyCriteria<T> createCriteria(Class<T> classToUse) {
         EntityManager em = getEntityManager();
 

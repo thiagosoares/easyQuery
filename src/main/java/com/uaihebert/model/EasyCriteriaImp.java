@@ -15,15 +15,38 @@
  * */
 package com.uaihebert.model;
 
+import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
+
+import com.uaihebert.factory.EasyCriteriaFactory;
+
 import java.util.List;
 
 public class EasyCriteriaImp<T> implements EasyCriteria<T> {
-    private final BasicQueryElements<T> basicQueryElements;
+    
+	private BasicQueryElements<T> basicQueryElements;
     private int firstResult;
     private int maxResults;
 
-    public EasyCriteriaImp(BasicQueryElements<T> basicQueryElements) {
+
+    public EasyCriteriaImp<T> clear() {
+        Class<T> entityClass = basicQueryElements.getEasyCriteriaBuilder().getEntityClass();
+        
+        EntityManager entityManager = basicQueryElements.getEasyCriteriaBuilder().getEntityManager();
+        
+        this.setBasicQueryElements((BasicQueryElements<T>) EasyCriteriaFactory.createBasicElement(entityManager, entityClass));
+        return this;
+    }
+    
+    
+    
+	public void setBasicQueryElements(BasicQueryElements<T> basicQueryElements) {
+		this.basicQueryElements = basicQueryElements;
+	}
+
+
+
+	public EasyCriteriaImp(BasicQueryElements<T> basicQueryElements) {
         this.basicQueryElements = basicQueryElements;
     }
 

@@ -385,4 +385,9 @@ public class InvalidEasyCriteriaClass<T> implements EasyCriteria<T> {
     public Long count() {
         return null;
     }
+
+	public EasyCriteria<T> clear() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

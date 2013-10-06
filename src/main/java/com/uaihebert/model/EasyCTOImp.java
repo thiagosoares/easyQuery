@@ -411,4 +411,9 @@ public class EasyCTOImp<T> implements EasyCriteria<T> {
     public QueryConfigurations getConfigurations() {
         return configurations;
     }
+    
+    public EasyCriteria<T> clear() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -116,8 +116,12 @@ public class EasyCriteriaBuilder<T> {
     public Class<T> getEntityClass() {
         return entityClass;
     }
+    
+    public EntityManager getEntityManager() {
+		return entityManager;
+	}
 
-    public void setDistinctTrue() {
+	public void setDistinctTrue() {
         mainCriteriaQuery.distinct(true);
         countCriteriaQuery.distinct(true);
     }
@@ -201,4 +205,6 @@ public class EasyCriteriaBuilder<T> {
 
         return object instanceof Fetch;
     }
+    
+    
 }

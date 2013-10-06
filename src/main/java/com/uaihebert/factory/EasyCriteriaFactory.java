@@ -38,7 +38,7 @@ public abstract class EasyCriteriaFactory {
         return new BasicQueryElements<T>(easyCriteriaBuilder, easyCTOConverted);
     }
 
-    private static <T> BasicQueryElements<T> createBasicElement(EntityManager entityManager, Class<T> entityClass) {
+    public static <T> BasicQueryElements<T> createBasicElement(EntityManager entityManager, Class<T> entityClass) {
         return createBasicElement(entityManager, entityClass, null);
     }
 
