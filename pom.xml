@@ -6,9 +6,13 @@
     <artifactId>easy-query</artifactId>
     <version>1.0.0</version>
    
-    <name>EasyCriteria</name>
-    <description>EasyCriteria project helps with native JPQL criteria</description>
-    <url>http://easycriteria.uaihebert.com</url>
+    <name>EasyQuery</name>
+    <description>
+    Este projeto é uma copia do projeto EasyCriteria (http://easycriteria.uaihebert.com). Infelizmente o EasyCriteria não
+    estaá hospedado em um servidor git e eu não pude fazer um clone dela para poder alterar alguns aspactos que não me atenderam com estavam.
+    Mas que fique claro que se trata do mesmo projeto com alguns ajustes que serão enviados para o autor no momento correto.
+    </description>
+    <url>https://github.com/thiagosoares/easyQuery</url>
    
     <licenses>
         <license>

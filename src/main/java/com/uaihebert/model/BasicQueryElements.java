@@ -22,7 +22,9 @@ import javax.persistence.TypedQuery;
 import javax.persistence.criteria.JoinType;
 import javax.persistence.criteria.Order;
 import javax.persistence.criteria.Predicate;
+
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -113,7 +115,7 @@ public class BasicQueryElements<T> {
             andEquals(attributeName, value, toLowerCase, true);
             andEquals(attributeName, value, toLowerCase, false);
         } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("We could not find the parameter: " + attributeName + " in the given class: " + easyCriteriaBuilder.getEntityClass().getCanonicalName());
+            throw new IllegalArgumentException("We could not find the parameter: " + attributeName + " in the given class: " + easyCriteriaBuilder.getEntityClass().getCanonicalName(), e);
         }
     }
 
@@ -141,7 +143,8 @@ public class BasicQueryElements<T> {
     public void orEquals(boolean toLowerCase, String attributeName, Object... values) {
         if (isHibernate()) {
             for(Object value : values){
-                if(value instanceof Long){
+                //if(value instanceof Long){
+              if(value.getClass().equals(long.class)){
                     String errorMessage = "This method is not implemented correctly on Hibernate yet (use Long instead of long). =/" + HIBERNATE_BUG_MESSAGE_1022938;
                     LOG.severe(errorMessage);
                     break;
@@ -170,6 +173,18 @@ public class BasicQueryElements<T> {
     private List<Predicate> extractOrPredicates(String attributeName, Object[] values, boolean toLowerCase, boolean pathToCount) {
         List<Predicate> orPredicates = new ArrayList<Predicate>();
 
+        if(values!= null) {
+          if(values[0].getClass().isArray()) {
+            
+            values = (Object[]) values[0];
+          
+          } else if(values[0] instanceof Collection){
+            
+            values = ((Collection) values[0]).toArray();
+            
+          }
+        }
+        
         for (Object value : values) {
             orPredicates.add(getEqualPredicateConverted(attributeName, value, toLowerCase, pathToCount));
         }
@@ -189,7 +204,19 @@ public class BasicQueryElements<T> {
 
     private Predicate[] extractNotPredicates(boolean toLowerCase, String attributeName, Object[] values, boolean pathToCount) {
         Predicate[] orPredicates = new Predicate[values.length];
-
+        
+        if(values!= null) {
+          if(values[0].getClass().isArray()) {
+            
+            values = (Object[]) values[0];
+          
+          } else if(values[0] instanceof Collection){
+            
+            values = ((Collection) values[0]).toArray();
+            
+          }
+        }
+        
         for (int i = 0; i < values.length; i++) {
             orPredicates[i] = createAndNotCondition(attributeName, toLowerCase, values[i], pathToCount);
         }
